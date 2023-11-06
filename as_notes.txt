@@ -1,0 +1,32 @@
+########## TO RUN:
+        Open terminal.
+        Run:
+        ```
+            cd /Users/anyasims/Documents/Oxford/website/anyasims.github.io
+            docker compose pull
+            docker compose up
+        ```
+        Then go to http://0.0.0.0:8080/
+ 
+ 
+########## STUFF I HAVE CHANGED:
+ - Colours in _sass/_themes.scss (see README for how to change colours).
+
+ - Have commented out loads of stuff in `_includes/header.html` to remove all the other links from the nav-bar
+ - Have commented out `permalink: ....` from all the pages, eg. /people/, /publications/ etc...
+            (so that doesn't take you to the default einsten version of the page if cheekily type extension into the url)
+ - This^ still doesnt stop you from typing in /blog/ to url and getting to default einstein blog, so:
+        - Have commented out everything in `blog/index.html` and renamed "/_posts/" to "/_posts_renamed/"
+        - Change this back to re-enable blog (+ uncomment stuff in header file so can get there with buttons)
+
+
+
+########## STUFF TO KNOW:
+- Stuff in `_site/....` is automatically generated from the other files,
+    so changing anything here is overwritten almost immediately and doesn't change anything
+- How to tell if a file is something you can edit, or if it is generated automatically from another file:
+                If it has nice indenting then you can edit it,
+                If it has no indenting then this is generated automatically.
+
+                But yeah basically anything in _site/.... is generated automatically,
+                and anything else you can edit (basically see .gitignore)

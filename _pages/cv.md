@@ -1,11 +1,13 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: #/cv/
 title: cv
-nav: true
+nav: false
 nav_order: 4
 cv_pdf: anya_sims_cv_nov23.pdf
-description: This is a description of the page. You can modify it in 'pages/_cv.md'. You can also change or remove the top pdf download button.
+description: # This is a description of the page. You can modify it in 'pages/_cv.md'. You can also change or remove the top pdf download button.
 toc:
-  sidebar: left
+  sidebar: #left
+
+  # uncomment anyasims.github.io/_data/cv.yml and anyasims.github.io/assets/json/resume.json to display Einstein's cv.
 ---

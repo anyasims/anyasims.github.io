@@ -52,8 +52,32 @@
                 </a>
               </li>
 
-              <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+              <!-- cv -->
+              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+                <a class="nav-link" href="/assets/pdf/anya_sims_cv_nov23.pdf">cv
+                </a>
+              </li>
+
+              <!-- <a href="/assets/pdf/anya_sims_cv_nov23.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a> -->
+
+
+
+              <!-- Blog (Uncomment to re-enable Blog.) -->
+
+              <!-- {% if site.blog_nav_title %}
+              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
+                  {%- if page.url contains 'blog' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %} -->
+
+
+
+              <!-- Other pages (Uncomment to re-enable all the other pages.)-->
+              <!-- {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.dropdown %}
@@ -94,7 +118,7 @@
               </li>
               {%- endif -%}
               {%- endif -%}
-              {% endfor -%}
+              {% endfor -%} -->
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
