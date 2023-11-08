@@ -13,7 +13,7 @@ profile:
     University of Oxford<br>
     Department of Statistics<br>
     <br>
-    anyasims [at] stats.ox.ac.uk<br>
+    anya.sims [at] stats.ox.ac.uk<br>
     <em>Please feel free to reach out!</em>
     </p>
 
