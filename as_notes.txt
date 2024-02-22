@@ -1,11 +1,13 @@
 ########## TO RUN:
-        Open terminal.
-        Run:
-        ```
-            cd /Users/anyasims/Documents/Oxford/website/anyasims.github.io
-            docker compose pull
-            docker compose up
-        ```
+        Open docker desktop app.
+            Click the play button on the container called "anyasimsgithubio".
+        Then open terminal.
+            Run:
+            ```
+                cd /Users/anyasims/Documents/Oxford/website/anyasims.github.io
+                docker compose pull
+                docker compose up
+            ```
         Then go to http://0.0.0.0:8080/
  
  
@@ -30,3 +32,13 @@
 
                 But yeah basically anything in _site/.... is generated automatically,
                 and anything else you can edit (basically see .gitignore)
+
+
+########## TO PUSH TO github:
+        ```
+        cd Documents/Oxford/website/anyasims.github.io
+        git status
+        git add .
+        git commit -m "message"
+        git push origin master
+        ```
