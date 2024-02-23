@@ -165,7 +165,7 @@ blockquote {
   width: 100%;
 
   .more-info {
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
     margin-top: 5px;
     // font-family: monospace;
     font-size: 0.8rem;
@@ -199,6 +199,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
+  // font-size: 0.875rem;
   font-size: 0.875rem;
 
   a {
@@ -347,23 +348,25 @@ blockquote {
   }
 }
 
-// Social (bottom)
+// Social (Have edited this)
 
 .social {
-  text-align: center;
+  // text-align: center;
+  margin-bottom: 0rem;
+
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.5rem;
 
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-theme-color);
         transition-property: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-text-color);
         }
       }
     }
@@ -373,6 +376,12 @@ blockquote {
     font-size: 0.8rem;
   }
 }
+
+.main {
+  font-size: 0.95rem;
+}
+
+
 
 .wechat-modal {
   display: none;

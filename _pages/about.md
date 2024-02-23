@@ -13,14 +13,14 @@ profile:
     University of Oxford<br>
     Department of Statistics<br>
     <br>
-    anya.sims [at] stats.ox.ac.uk<br>
     <em>Please feel free to reach out!</em>
     </p>
-
+  social_below_pic: true # My addition to include social icons under the profile picture
+  # extra_vspace: <br> # My addition to add vspace under lhs to prevent rhs flowing over
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social_bottom: false  # includes social icons at the bottom of the page
 ---
 
 Hi! I’m a second year PhD student at Oxford, supervised by [Prof. Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/) and part of the [StatML CDT](https://statml.io/) and [OXCSML](https://csml.stats.ox.ac.uk/) group.

@@ -21,7 +21,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: daffodil.png # ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -43,7 +43,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -62,21 +62,22 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # anyasims # anyasims # your GitHub user name
+github_username: anyasims # anyasims # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # anyaasims # your Twitter handle
+# twitter_username: anyaasims # your Twitter handle
+x_username: anyaasims # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # anya-sims-1435ba16b # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # MSQalu0AAAAJ # your Google Scholar ID
+scholar_userid: MSQalu0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -106,8 +107,8 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+# contact_note: >
+#   You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -126,9 +127,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog # (uncomment Blog part in _includes/header.html and blog/index.html to re-enable blog.)
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: no blog posts... yet # blog_name will be displayed in your blog page
 blog_nav_title: blog # blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: oooh how did you reach this
+blog_description: sneaky! you weren't meant to reach this:)
 permalink: /blog/:year/:title/
 
 
@@ -371,6 +372,7 @@ enable_navbar_social:       false  # enables displaying social links in the navb
 enable_project_categories:  true   # enables categorization of projects into multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+# enable_social_below_profile_pic: true # My addition to include social icons under the profile picture (rather than in navbar as enabled by _config.enable_navbar_social)
 
 # -----------------------------------------------------------------------------
 # Library versions

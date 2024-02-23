@@ -38,10 +38,30 @@ layout: default
               {{ page.profile.more_info }}
             </div>
             {%- endif %}
+            <!-- Social -->
+            {%- if page.profile.social_below_pic %}
+            <div class="social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+            </div>
+            {%- endif %}
+            <!-- Social Icons
+            {%- if page.profile.enable_social_below_profile_pic -%}
+            <div class="social-below-profile-pic">
+              {% include social.html %}
+            </div> -->
+            {% endif %}
+            <!-- My addition of extra vspace as a hack to prevent rhs flowing over to lhs. -->
+            {%- if page.profile.extra_vspace %}
+            <div class="more-info">
+              {{ page.profile.extra_vspace }}
+            </div>
+            {%- endif %}
           </div>
           {%- endif %}
-
-          <div class="clearfix">
+          <!-- My adddition for smaller font size -->
+          <div class="main"> 
             {{ content }}
           </div>
 
@@ -64,7 +84,7 @@ layout: default
           {%- endif %}
 
           <!-- Social -->
-          {%- if page.social %}
+          {%- if page.social_bottom %}
             <div class="social">
               <div class="contact-icons">
                 {% include social.html %}
