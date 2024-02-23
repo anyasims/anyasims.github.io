@@ -43,3 +43,25 @@
         git commit -m "message"
         git push origin master
         ```
+
+
+########## Fixing after `docker compose up` stopped working in making it show up at http://0.0.0.0:8080/
+
+The error said something like "could not find gem XXX" issue.
+As far as I understand this is because it is using the most up-to-date docker image
+    but still the version of the code from when I initially cloned the repo.
+
+The solution was update the code with:
+    ```
+    # Assuming the current directory is <your-repo-name>
+    $ git remote add upstream https://github.com/alshedivat/al-folio.git
+    $ git fetch upstream
+    $ git rebase v0.11.0
+    ```
+    --> And then loads of "accept current change" to accept all the changes.
+
+    (as shown in the FAQ here:
+    https://github.com/alshedivat/al-folio/blob/master/FAQ.md#i-am-trying-to-deploy-my-site-but-it-fails-with-could-not-find-gem-jekyll-diagrams-in-locally-installed-gems-how-do-i-fix-that
+    which directs you to the readme upgrading section:
+    https://github.com/alshedivat/al-folio/blob/master/INSTALL.md#upgrading-from-a-previous-version)
+
