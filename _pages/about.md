@@ -6,7 +6,7 @@ subtitle: Machine Learning PhD Student
 
 profile:
   align: left
-  image: prof_pic.jpg
+  image: prof_pic_2.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>
